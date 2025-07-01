@@ -24,8 +24,12 @@ coverage/
 # ---------------------------------------------------------------------
 # Add specific rules here…
 
-# Laravel specific
-/vendor/
+# Laravel
+/bootstrap/ssr
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
 .env
 .env.backup
 .env.production
@@ -35,39 +39,7 @@ Homestead.yaml
 auth.json
 npm-debug.log
 yarn-error.log
-
-# Laravel storage and cache
-/storage/*.key
-/storage/app/public/*
-!/storage/app/public/.gitkeep
-/storage/framework/cache/data/*
-!/storage/framework/cache/data/.gitkeep
-/storage/framework/sessions/*
-!/storage/framework/sessions/.gitkeep
-/storage/framework/testing/*
-!/storage/framework/testing/.gitkeep
-/storage/framework/views/*
-!/storage/framework/views/.gitkeep
-/storage/logs/*
-!/storage/logs/.gitkeep
-
-# Laravel public storage
-/public/storage
-/public/hot
-
-# IDE and editor files
-.vscode/
-.fleet/
-*.swp
-*.swo
-
-# macOS
-.DS_Store?
-
-# Windows
-Thumbs.db
-ehthumbs.db
-
-# PHP
-*.cache
-
+/.fleet
+/.idea
+/.vscode
+.phpactor.json
